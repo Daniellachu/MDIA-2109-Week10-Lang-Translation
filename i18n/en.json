@@ -61,10 +61,12 @@
     "page.home.info.campus.int.tuition":"$37,600",
     "page.home.info.campus.cost.estimate":"*cost estimate",
 
+    "page.home.info.more.programs":"All Business + Media Programs",
     "page.home.info.visited":"Recently visited programs",
 
     "page.home.diploma.fs":"Full-Stack Web Development",
-    "page.home.certificate":"Applied Data Analytics",
+    "page.home.data":"Applied Data Analytics",
+    "page.home.certificate":"Certificate",
     
     "page.home.main.content.overview":"Overview",    
     "page.home.main.content.note":"Note:",
@@ -75,7 +77,7 @@
     "page.home.main.content.domestic.cont":"applicants may continue to apply.",
     "page.home.main.content.find.program" :"Find programs accepting international students.",
 
-    "page.home.main.delivery":"Delivery:",
+    "page.home.main.delivery":"Delivery: ",
     "page.home.main.delivery.type":"in person.",
     "page.home.main.delivery.type.details":"See details.",
 

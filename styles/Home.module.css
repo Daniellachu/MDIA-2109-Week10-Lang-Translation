@@ -21,7 +21,11 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
+
 .body{
   margin: 0;
 }
@@ -76,7 +80,7 @@
   cursor: pointer;
   line-height: 1;
   padding: 0px 5px;
-  font-family: geogrotesque_cyrmedium, arial, sans-serif;
+  font-family: 'geogrotesque_cyrmedium', arial, sans-serif;
   font-weight: normal;
   font-style: normal;
 }
@@ -117,7 +121,7 @@
 
 .menuNav > a:hover{
   padding-bottom: 8px;
-  border-bottom: 2px solid var(--yellow-highlight);
+  border-bottom: 3px solid var(--yellow-highlight);
   color: var(--bright-blue);
 }
 
@@ -151,7 +155,7 @@
 }
 
 .searchInput :focus{
-  border: 2px solid 296cf6;
+  border: 2px solid #296cf6;
   outline: var(--bright-blue);
 }
 
@@ -196,9 +200,11 @@
 .mainImage{
   object-fit: cover;
   object-position: bottom;
+  content: "";
   background-color: rgba(0,0,0,.5);
   margin-left: 0;
   margin-right: 0;
+  width: 100%;
 }
 
 .bannerContainer{
@@ -214,7 +220,6 @@
   padding-right: 40px;
   width: max-content;
 }
-
 
 .mainTitle{
   width: 600px;
@@ -251,7 +256,7 @@
   padding-top: 105px;
   width: 260px;
   gap: 16px;
-  margin-left: 445px;
+  margin-left: 454px;
 }
 
 .contactButton{
@@ -272,6 +277,10 @@
   flex-direction: row;
   justify-content: space-between;
 }
+.contentMainContainer{
+  display: flex;
+  flex-direction: row;
+}
 
 .sideNavBarContainer{
   width: 25%;
@@ -279,21 +288,35 @@
   flex-direction: column;
   border-top: 1px solid #f2f2f2;
   padding: 24px;
+  border-right: 1px solid #f2f2f2;
+  border-left: 1px solid #f2f2f2;
 }
 .sideNavBar{
   padding-top: 64px;
   background-color: #fff;
-  border-right: 1px solid #f2f2f2;
   margin-right: -1px;
   overflow: hidden;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
 }
 .sideNavTitle{
+  font-size: 28px;
+  color: var(--blue-nav);
+  font-family: 'geogrotesque_cyrmedium', Arial, sans-serif;
+  display: inline-block;
+  margin: 18px 65px 18px 24px;
+  padding: 8px 8px 8px 0;
+}
+.sideNavFirstTitle{
   font-size: 18px;
   color: var(--blue-nav);
   font-family: 'geogrotesque_cyrmedium', Arial, sans-serif;
   display: inline-block;
   margin: 18px 65px 18px 24px;
-  padding: 8px;
+  width: max-content;
+  padding: 20px 20px;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .navOverviewList > li{
@@ -311,6 +334,7 @@
   padding: 8px 8px 8px 0;
   font-family: 'Nunito Sans', sans-serif;
   margin-bottom: 8px;
+  color: var(--blue-nav);
 }
 
 .sideNavCategories:hover{
@@ -324,18 +348,458 @@
   width: 82%;
 }
 
-.programInfo{
-    
-  
-}
 .infoDates{
   color: var(--bright-blue);
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-s
 }
 
+.infoDates::marker{
+  color: var(--blue-nav);
+}
 .infoExploreDesc{
   padding-left: 25px;
   font-family: 'Nunito Sans';
   display: flex;
+  gap: 5px;
+  width: max-content;
+}
+/* .programInfo{
+  width: min-content;
+} */
+
+.programOverviewTitle{
+  color: var(--blue-nav);
+  font-family: Nunito Sans, 'Arial', sans-serif;
+  font-weight: bold;
+}
+.programOverviewDesc{
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  font-weight: lighter;
+}
+
+.programOverviewCategory{
+  display: flex;
+  flex-direction: row;
   gap: 10px;
+  color: var(--blue-nav);
+  height: 25px;
+  align-items: center;
+  padding-left: 25px;
+  width: max-content;
+}
+
+.programOverviewDesc{
+  font-family: 'Nunito Sans';
+}
+.programOverviewCost{
+  font-family: 'Nunito Sans';
+  margin-bottom: 16px; 
+}
+
+.moreProgram{
+  color: var(--bright-blue);
+  font-family: 'Nunito Sans';
+  margin-top: 16px;
+  padding-left: 25px;
+}
+
+.visitProgram{
+  padding-left: 25px;
+  font-family: 'Nunito Sans';
+  color: var(--blue-nav);
+}
+
+.mainContentContainer{
+  max-width: 100%;
+  padding: 64px 30px;
+}
+.mainContentTitle{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  font-size: 24px;
+  color: var(--bright-blue);
+  gap: 10px;
+}
+
+.contentTitle{
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: -.6px;
+  color: var(--blue-nav);
+  font-family: 'mabry_prolight', arial, sans-serif;
+  margin-bottom: 16px;
+}
+
+.noteContent{
+  word-spacing: 0px;
+  font-size: 18px;
+  padding:10px ;
+  background: #e2eff6;
+  border-left: 8px solid #8babc1;
+  margin-bottom: 32px;
+  padding: 24px;
+  line-break: anywhere;
+  font-family: 'Nunito Sans';
+  color: var(--blue-nav);
+}
+
+
+.Title{
+  font-weight: bold;
+  color: var(--blue-nav);
+  margin-right: 5px;
+}
+.note{
+  margin-bottom: 32px;
+  
+}
+
+.boldNote{
+  color: var(--blue-nav);
+  font-weight: 800;
+  margin:0 5px;
+}
+
+.findProgram{
+  color: var(--bright-blue);
+  border-bottom: 2px solid var(--yellow-highlight);
+  margin-bottom: 5px;
+  padding-left: 5px;
+}
+
+.noteTwo{
+  background: #f2f2f2;
+  border-left: 8px solid #dcdcdc;
+  margin-bottom: 32px;
+  padding: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  font-size: 18px;
+  font-family: 'Nunito Sans';
+  color:var(--blue-nav);
+}
+
+.noteTwo{
+  word-spacing: 0px;
+}
+
+.text{
+  font-family: 'Nunito Sans';
+  font-size: 18px;
+  color: var(--blue-nav);
+  margin-bottom: 24px;
+}
+
+.noteDetails{
+  color: var(--bright-blue);
+  border-bottom: 3px solid var(--yellow-highlight);
+  margin-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: 'Nunito Sans';
+}
+
+.videoImage{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.programTitle{
+  color: #5a5a5a;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: -.4px;
+  font-weight: 400;
+  font-family: 'mabry_prolight', arial, sans-serif;
+}
+
+.listContainer{
+  font-size: 18px;
+  font-family: 'Nunito Sans';
+  list-style: disc outside;
+  color: var(--blue-nav);
+}
+
+.listContent{
+  margin-top: 8px;
+  margin-left: 24px;
+  padding-left: 8px;
+}
+
+.programDetailInfo{
+  display: flex;
+  align-items: baseline;
+  font-size: 18px;
+  font-family: 'Nunito Sans', Arial, Sans serif;
+  color: var(--blue-nav);
+  margin-bottom: 24px;
+}
+
+.gradContent{
+  display: flex;
+  align-items: baseline;
+  font-size: 18px;
+}
+
+.nextContent{
+  margin-left: auto;
+  padding-left: 8px;
+  text-align: right;
+}
+
+.requirements{
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 1.5;
+  padding-bottom: 3px;
+  font-family: geo-semibold,Arial,sans-serif;
+  letter-spacing: .48px;
+  line-height: 1.7;
+  text-decoration: none;
+  color: var(--blue-nav);
+  border-bottom: 3px solid var(--yellow-highlight);
+  width: 235px;
+  margin-left: auto;
+}
+
+.nextUp{
+  color: #767676;
+  display: block;
+  font-family: Nunito Sans,Arial,sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: none;
+}
+
+.disclaimer{
+  color: #767676;
+  font-family: Nunito Sans,Arial,sans-serif;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+
+.footerContainer{
+  width: 100%;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: row;
+}
+
+.footerColumn{
+  border-bottom: 0;
+  border-top: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
+  border-left: 1px solid #f2f2f2;
+  margin: 0;
+  padding: 46px 36px 34px;
+  width: 25%;
+}
+.footerColumn2{
+  border-bottom: 0;
+  border-top: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
+  border-left: 1px solid #f2f2f2;
+  margin: 0;
+  padding: 46px 36px 34px;
+  width: 25%;
+}
+
+.footerContact{
+  display: flex;
+  flex-direction: column;
+}
+.footerTitle{
+  font-family: geo-medium,Arial,sans-serif;
+  font-size: 16px;
+  letter-spacing: 2.21px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  padding-left: 48px;
+  color: var(--blue-nav);
+}
+
+.footerAddress{
+  font-family: 'Nunito Sans';
+  color: var(--blue-nav);
+  margin-bottom: 27px;
+}
+
+.link{
+  color: var(--bright-blue);
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  font-weight: 800;
+  list-style: none;
+}
+
+.contactContainer{
+  margin-bottom: 27px;
+}
+.contactNumber{
+  display: flex;
+  flex-direction: row;
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  font-size: 14px;
+  color: var(--blue-nav);
+}
+
+.socialMedia{
+  display: flex;
+  font-size: 30px;
+  gap: 15px;
+  color: var(--blue-nav);
+  margin-top: 50px;
+}
+
+.footerCategories{
+  padding-bottom: 20px;
+  gap: 10px;
+}
+.categoriesBlue{
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  color: var(--bright-blue);
+  list-style: none;
+}
+
+
+.campusInfo > li{
+  margin-bottom: 10px;
+}
+
+
+@media screen and (max-width:1440px) {
+  .programInfoContainer2{
+    display: none;
+  }
+}
+@media screen and (max-width: 48em){
+  .siteHeader, .searchInput, .navOverviewList, .programInfoContainer{
+    display: none;
+  }
+  .menuNav > a{
+    display: none;
+  }
+  .logo{
+    display: block;
+    height: 45px;
+    margin-right: 15px;
+    width: 50px;
+    padding-left: 16px;
+  }
+  .buttonContainer{
+    margin-left: 0;
+    flex-direction: row;
+    padding: 0;
+    margin-top: 15px;
+  }
+  .contactButton{
+    display: inline-block;
+    min-width: 225px;
+  }
+  .bannerContent{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding: 0;
+    padding-left: 16px; 
+  }
+  .menuContainer{
+    padding: 0px;
+    height: 64px;
+  }
+  .sideNavBarContainer{
+    width: 100%;
+  }
+  .contentMainContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  .mainContentContainer{
+    width: 95%;
+  }
+  .videoImage{
+    width: 100%;
+    height: auto;
+  }
+  .sideNavBar{
+    padding: 0;
+  }
+  .mainContentContainer{
+    padding: 0 20px;
+  }
+  .sideNavBarContainer{
+    padding:0;
+  }
+  .mainContent{
+    width: 100%;
+  }
+  .gradContent, .programDetailInfo, .contactNumber{
+    display: flex;
+    flex-direction: column;
+  }
+  .disclaimer{
+    padding-bottom: 30px;
+  }
+  .programInfoContainer2{
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #f2f2f2;
+  }
+  .categoriesList{
+    padding: 0;
+  }
+  .footerContainer, .campusInfo, .footerTitle{
+    padding: 0;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .mainTitle{
+    font-size: 40px;
+    width: min-content;
+
+  }
+  .bannerTextContent{
+    gap: 5px;
+  }
+  .buttonContainer{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .bannerContent{
+    margin-top: 20px;
+  }
+  .programTitle{
+    font-size: 24px;
+  }
+  .listContent{
+    font-size: 16px;
+  }
+  .contentList{
+    padding: 0px;
+  }
+  .mainContentContainer{
+    width: 100%;
+  }
+  .footerContainer{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .footerColumn{
+    width: 100%;
+  }
+  .footerCategories{
+    display: none;
+  }
+  .footerColumn2{
+    display: none;
+  }
 }

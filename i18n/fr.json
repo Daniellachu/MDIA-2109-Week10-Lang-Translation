@@ -61,10 +61,12 @@
     "page.home.info.campus.int.tuition":"$37,600",
     "page.home.info.campus.cost.estimate":"*prix estimé",
 
+    "page.home.info.more.programs":"Tous les programmes Entreprises + Médias",
     "page.home.info.visited":"Programmes récemment visités",
 
     "page.home.diploma.fs":"Développement Web Complet",
-    "page.home.certificate":"Analyse de Données Appliquée",
+    "page.home.data":"Analyse de Données Appliquée",
+    "page.home.certificate":"Certificat",
 
     "page.home.main.content.overview":"Aperçu",    
     "page.home.main.content.note":"Note:",
@@ -75,7 +77,7 @@
     "page.home.main.content.domestic.cont":"les candidats peuvent continuer à postuler.",
     "page.home.main.content.find.program" :"Trouvez des programmes acceptant des étudiants internationaux.",
 
-    "page.home.main.delivery":"Livraison:",
+    "page.home.main.delivery":"Livraison: ",
     "page.home.main.delivery.type":"en personne.",
     "page.home.main.delivery.type.details":"Voir les détails.",
 
