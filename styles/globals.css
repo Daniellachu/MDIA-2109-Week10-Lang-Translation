@@ -4,3 +4,7 @@
     --bright-blue:#296cf6;
     --white:#fff;
 }
+
+body{
+    margin: 0;
+}

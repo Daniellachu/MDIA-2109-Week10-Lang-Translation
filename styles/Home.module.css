@@ -674,7 +674,7 @@
 }
 
 
-@media screen and (max-width:1440px) {
+@media screen and (max-width:2040px) {
   .programInfoContainer2{
     display: none;
   }
@@ -764,7 +764,6 @@
   .mainTitle{
     font-size: 40px;
     width: min-content;
-
   }
   .bannerTextContent{
     gap: 5px;
@@ -803,3 +802,4 @@
     display: none;
   }
 }
+
